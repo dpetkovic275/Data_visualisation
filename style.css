@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls input[type="range"] {-webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-right: 10px;
+}
+
+.controls input[type="range"]:hover {
+    opacity: 1;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: hsl(222, 96%, 44%);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+
+#map {
+    background: #fff;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    margin-bottom: 50px; 
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    color:white;
+    border-radius: 8px;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    font-size: 18px; 
+}
+
+#legend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centriranje legendi */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px; /* Dodaje razmak između legendi */
+}
+
+.legend-color {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+/* Postojeći stilovi */
+
+#barchart {
+    /*Postavljanje okvira*/
+    width: 100%; 
+    max-width: 1150px; /* Maksimalna širina grafikona */
+    height: 800px; /* Visina grafikona */
+    margin: 20px auto; /* Automatski centriranje s gornjom i donjom marginom */
+    border: 1px solid #ccc; /* Dodaje okvir */
+    padding: 20px;
+    background-color: #fff; /* Pozadina za graf */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Dodaje sjenu za efekat dubine */
+}
+
+.barchart-tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    color:white;
+    border-radius: 8px;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    font-size: 18px; 
+}
+
+.barchart-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.axis-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Povećava veličinu fonta za label */
+    color: #333;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriranje sadržaja unutar kontejnera */
+}
